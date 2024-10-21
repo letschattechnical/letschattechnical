@@ -81,63 +81,24 @@ Engineer<br>
 </big></big></big>
 <p><big><big><big>email to:- <strong>letschattechnical@gmail.com</strong></big></big></big><br>
 </p>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>   
-
 </head>
+
 <body>
-    <h1>Contact Us</h1>
-    <form action="process.php" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
-
-        <label   
- for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="subject">Subject:</label>   
-
-        <input type="text" id="subject" name="subject" required><br><br>
-
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="5" cols="50" required></textarea><br><br>
-
-        <input type="submit" value="Send">   
-
+  <div class="wrapper">
+    <form class="form">
+      <div class="pageTitle title">Sign Up </div>
+      <div class="secondaryTitle title">Please fill this form to sign up.</div>
+      <input type="text" class="name formEntry" placeholder="Name" />
+      <input type="text" class="email formEntry" placeholder="Email"/>
+      <textarea class="message formEntry" placeholder="Message"></textarea>
+      <input type="checkbox" class="termsConditions" value="Term">
+      <label style="color: grey" for="terms"> I Accept the <span style="color: #0e3721">Terms of Use</span> & <span style="color: #0e3721">Privacy Policy</span>.</label><br>
+      <button class="submit formEntry" onclick="thanks()">Submit</button>
     </form>
+  </div>
+  <script src="app.js"></script>
 </body>
 
-// start of contact
-<?php
-// Get form data
-$name = $_POST['name'];
-$email = $_POST['email'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
-
-// Validate email address (optional)
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    // Handle invalid email (e.g., redirect back to form with error message)
-    header("Location: contact.html?error=invalid_email");
-    exit();
-}
-
-// Send email using your preferred method (e.g., PHP's mail function, SMTP, or a third-party library)
-$to = "letschattechnical@gmail.com"; // Replace with your email address
-$headers = "From: $name <$email>";
-
-if (mail($to, $subject, $message, $headers)) {
-    // Handle successful email sending (e.g., display a success message)
-    echo "Your message has been sent successfully.";
-} else {
-    // Handle email sending failure (e.g., display an error message)
-    echo "Error sending your message. Please try again later.";
-}
-?>
-  //End of contact
 </div>
 <div id="footer">
 <p><a href="index.html">Home</a> | <a href="examples.html">Examples</a>
