@@ -1,30 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
-</head>
-<body>
-    <div class="container">
-        <div class="picture-container">
-            <div class="picture">
-                <img src="customer-support.gif">
-            </div>
-        </div>
-        <div class="contact-form-container">
-            <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
-                <span class="form-header">Contact us</span>
-                <input type="hidden" name="access_key" value="6a223b8b-1558-41a6-9495-821bebfb5b77
-">
-                <input type="text" name="name" class="input" placeholder="Your Name" />
-                <input type="email" name="email" class="input" placeholder="Your Email" />
-                <textarea name=" message" cols="30" rows="5" placeholder="Enter Your message" class="input"
-                    required></textarea>
-                <button class="submit" type="submit">Submit</button>
-            </form>
-        </div>
+<!-- 
+    This is a working contact form. To receive email, 
+    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+
+    Create Access Key here 👉 https://web3forms.com/
+ -->
+
+<section class="contact-section">
+  <div class="contact-intro">
+    <h2 class="contact-title">Get in Touch</h2>
+    <p class="contact-description">
+      Fill out the form below and we'll get back to you as soon as possible.
+    </p>
+  </div>
+
+  <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="6a223b8b-1558-41a6-9495-821bebfb5b77" />
+    <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+    <input type="hidden" name="from_name" value="My Website" />
+    <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+
+    <div class="form-group-container">
+      <div class="form-group">
+        <label for="name" class="form-label">Name</label>
+        <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+      </div>
+      <div class="form-group">
+        <label for="phone" class="form-label">Phone</label>
+        <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+      </div>
     </div>
-</body>
-</html>
-CSS Code
+    <button class="form-submit" type="submit">Send Message</button>
+  </form>
+
+</section>
