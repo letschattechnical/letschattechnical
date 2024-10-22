@@ -10,6 +10,12 @@ body
   background: #F5F5EE;
   color: #555;}
 
+/* In style.css */
+
+img {
+    float: right; /* Floats the image to the right */
+}
+
 p
 { padding: 0 0 20px 0;
   line-height: 1.7em;}
