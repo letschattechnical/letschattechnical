@@ -15,6 +15,14 @@ body
 img {
     float: right; /* Floats the image to the right */
 }
+* In style.css */
+
+.centered-element {
+    width: 200px; /* Adjust the width as needed */
+    margin: 0 auto;
+    float: left; /* Or right, depending on your layout */
+}
+
 
 p
 { padding: 0 0 20px 0;
