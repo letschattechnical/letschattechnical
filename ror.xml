@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://letschattechnical.com/</title>
+  <link>https://letschattechnical.com/</link>
+
+<item>
+     <link>https://letschattechnical.com/</link>
+     <title>Let`s chat Technical</title>
+     <description>Let`s chat Technical</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://letschattechnical.com/index.html</link>
+     <title>Let`s chat Technical</title>
+     <description>Let`s chat Technical</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://letschattechnical.com/Book.html</link>
+     <title>Book</title>
+     <description>website description</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://letschattechnical.com/contact.html</link>
+     <title>Contact us</title>
+     <description>website description</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
