@@ -83,17 +83,25 @@ Milling , Lathes etc. Most formats </big></big><big><big>available
 <p><font style="font-weight: bold;" size="+2">CNC services</font><big><big><big><br>
 </big></big></big>
 <big><big>3D carving and Engraving available</big></big></p>
-<!-- Video Container Card -->
-<div><big><big><!-- Video Player --> </big></big><!-- Video Container Card - Changed max-w-4xl to max-w-md for smaller size -->
-<div class="w-full max-w-2xl bg-gray-800 shadow-2xl rounded-xl p-4 md:p-6">
-<div class="relative overflow-hidden rounded-lg shadow-inner shadow-gray-700"><big><big><!-- 
-                Attributes explained:
-                - controls: Allows users to play, pause, and control volume/fullscreen.
-                - poster: Shows an image before the video loads (optional, but good practice).
-                - muted: Helps autoplay work in many modern browsers.
-                - loop: Repeats the video after it finishes.
-                - class: Makes the video fill the container.
-            --><video id="cnc-video" controls="" autoplay="" muted="" loop="" class="w-full h-full rounded-lg" onerror="this.parentNode.innerHTML = '<div class=\'text-center p-12 text-red-400\'>Error: The video file (cnc.mp4) could not be loaded. Please ensure the file is in the correct path.</div>';"><source src="cnc.mp4" type="video/mp4"><!-- Fallback content if the browser doesn't support the video format --></source></video></big></big></div>
+<!-- Video Container Card - The max-w-md class ensures a small, centered video output -->
+    <div class="w-full max-w-md bg-gray-800 shadow-2xl rounded-xl p-4 md:p-6">
+        
+        <h1 class="text-xl font-extrabold text-white mb-4 text-center">
+            CNC Machine Operation
+        </h1>
+
+        <!-- Video Player - Enforcing a 16:9 aspect ratio -->
+        <!-- pb-[56.25%] sets the height based on 9/16 of the width (16:9 aspect ratio) -->
+        <div class="relative pb-[56.25%] overflow-hidden rounded-lg shadow-inner shadow-gray-700">
+            
+            <video id="cnc-video" controls="" autoplay="" muted="" loop="" class="absolute top-0 left-0 w-full h-full rounded-lg" onerror="this.parentNode.innerHTML = '<div class=\'absolute top-0 left-0 w-full h-full flex items-center justify-center bg-gray-900 text-red-400 p-4\'>Error: The video file (cnc.mp4) could not be loaded. Please ensure the file is in the correct path.</div>';">
+                <source src="cnc.mp4" type="video/mp4">
+                <!-- Fallback content if the browser doesn't support the video format -->
+                </source></video><p class="text-sm text-gray-400 p-4 absolute top-0 left-0 w-full h-full flex items-center justify-center bg-gray-700">
+                    Your browser does not support the video tag.
+                </p>
+            
+        </div>
 <table style="text-align: left; width: 657px; height: 313px;" border="1" cellpadding="2" cellspacing="2">
   <tbody>
     <tr>
@@ -126,6 +134,6 @@ enquiry to:-</big></big><br>
 </div>
 </div>
 </div>
-</div>
+
 
 </body></html>
